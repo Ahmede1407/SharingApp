@@ -7,8 +7,9 @@ This is the final assignment of the course [Oriented Object Design](https://www.
 
 
 Diagrams below are designed and used for build this app:
-* UML Class Diagram
+* UML Class Diagram for Application (Items Only)
 * UML Sequence Diagram for Adding a New Item
 * UML State Diagram for Adding & Editing an Item
 
 
+1. UML Class Diagram for Application (Items Only) ![view](./UML Class Diagrams/1. UML Class Diagram for Application (Items Only).jpeg)
