@@ -12,4 +12,4 @@ Diagrams below are designed and used for build this app:
 * UML State Diagram for Adding & Editing an Item
 
 
-1. UML Class Diagram for Application (Items Only) ![UML Class Diagram for Application (Items Only)](/UML%20Class%20Diagrams/1.%20UML%20Class%20Diagram%20for%20Application%20(Items%20Only).jpeg)
+## UML Class Diagram for Application (Items Only) ![UML Class Diagram for Application](/UML%20Class%20Diagrams/1.%20UML%20Class%20Diagram%20for%20Application%20(Items%20Only).jpeg)
