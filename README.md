@@ -13,3 +13,5 @@ Diagrams below are designed and used for build this app:
 ## UML Class Diagram for Application (Items Only) ![UML Class Diagram for Application](</UML%20Class%20Diagrams/1.%20UML%20Class%20Diagram%20for%20Application%20(Items%20Only).jpeg>)
 
 ## UML Sequence Diagram for Adding a New Item ![UML Sequence Diagram for Adding a New Item](/UML%20Class%20Diagrams/2.%20UML%20Sequence%20Diagram%20for%20Adding%20a%20New%20Item.jpg)
+
+## UML State Diagram for Adding & Editing an Item ![UML State Diagram for Adding & Editing an Item](/UML%20Class%20Diagrams/3.%20UML%20State%20Diagram%20for%20Adding%20%26%20Editing%20an%20Item.jpg)
