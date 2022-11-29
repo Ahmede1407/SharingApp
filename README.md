@@ -15,3 +15,17 @@ Diagrams below are designed and used for build this app:
 ## UML Sequence Diagram for Adding a New Item ![UML Sequence Diagram for Adding a New Item](/UML%20Class%20Diagrams/2.%20UML%20Sequence%20Diagram%20for%20Adding%20a%20New%20Item.jpg)
 
 ## UML State Diagram for Adding & Editing an Item ![UML State Diagram for Adding & Editing an Item](/UML%20Class%20Diagrams/3.%20UML%20State%20Diagram%20for%20Adding%20%26%20Editing%20an%20Item.jpg)
+
+
+
+# Final Assignment.
+
+**Part 1**
+
+[Contact.java](https://github.com/Ahmede1407/SharingApp/blob/master/app/src/main/java/com/example/sharingapp/Contact.java)
+
+[ContactList.java](https://github.com/Ahmede1407/SharingApp/blob/master/app/src/main/java/com/example/sharingapp/ContactList.java)
+
+**Part 2**
+
+[Video Submission](https://youtu.be/bp7DbENiRFQ)
