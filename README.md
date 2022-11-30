@@ -28,4 +28,4 @@ Diagrams below are designed and used for build this app:
 
 **Part 2**
 
-[Video Submission](https://youtu.be/bp7DbENiRFQ)
+[Video Submission](https://youtu.be/5lp34nFkB48)
