@@ -3,9 +3,8 @@ package com.example.sharingapp;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.provider.MediaStore;
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -13,6 +12,8 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * Editing a pre-existing item consists of deleting the old item and adding a new item with the old
@@ -131,8 +132,16 @@ public class EditItemActivity extends AppCompatActivity{
 
     public void deleteItem(View view) {
 
-        item_list.deleteItem(item);
-        item_list.saveItems(context);
+        // Delete item
+        DeleteItemCommand delete_item_command = new DeleteItemCommand(item_list, item, context);
+        delete_item_command.execute();
+
+
+        boolean success = delete_item_command.isExecuted();
+        if (!success){
+            return;
+        }
+
 
         // End EditItemActivity
         Intent intent = new Intent(this, MainActivity.class);
@@ -194,9 +203,16 @@ public class EditItemActivity extends AppCompatActivity{
             updated_item.setBorrower(contact);
         }
 
-        item_list.deleteItem(item);
-        item_list.addItem(updated_item);
-        item_list.saveItems(context);
+        // Edit item
+        EditItemCommand edit_item_command = new EditItemCommand(item_list, item, updated_item, context);
+        edit_item_command.execute();
+
+
+        boolean success = edit_item_command.isExecuted();
+        if (!success){
+            return;
+        }
+
 
         // End EditItemActivity
         Intent intent = new Intent(this, MainActivity.class);
