@@ -2,10 +2,11 @@ package com.example.sharingapp;
 
 import android.content.Context;
 import android.content.Intent;
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * Editing a pre-existing contact consists of deleting the old contact and adding a new contact with the old
@@ -66,9 +67,17 @@ public class EditContactActivity extends AppCompatActivity {
 
         Contact updated_contact = new Contact(username_str, email_str, id);
 
-        contact_list.deleteContact(contact);
-        contact_list.addContact(updated_contact);
-        contact_list.saveContacts(context);
+        // Edit item
+        EditContactCommand edit_contact_command = new EditContactCommand(contact_list, contact, updated_contact, context);
+        edit_contact_command.execute();
+
+
+        boolean success = edit_contact_command.isExecuted();
+        if (!success){
+            return;
+        }
+
+
 
         // End EditContactActivity
         finish();
@@ -76,8 +85,17 @@ public class EditContactActivity extends AppCompatActivity {
 
     public void deleteContact(View view) {
 
-        contact_list.deleteContact(contact);
-        contact_list.saveContacts(context);
+        // Delete item
+        DeleteContactCommand delete_contact_command = new DeleteContactCommand(contact_list, contact, context);
+        delete_contact_command.execute();
+
+
+        boolean success = delete_contact_command.isExecuted();
+        if (!success){
+            return;
+        }
+
+
 
         // End EditContactActivity
         finish();
